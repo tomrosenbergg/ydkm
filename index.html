@@ -11,8 +11,24 @@
       margin: 0;
       padding: clamp(1.5rem, 5vw, 4rem);
       display: grid;
-      background: #626262;
+      background: #adadad;
       font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      body {
+        animation: grey-shift 10s ease-in-out infinite;
+      }
+    }
+
+    @keyframes grey-shift {
+      0%, 100% {
+        background-color: #a6a6a6;
+      }
+
+      40% {
+        background-color: #e8e8e8;
+      }
     }
 
     main {
